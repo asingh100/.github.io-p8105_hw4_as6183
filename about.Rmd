@@ -1,0 +1,209 @@
+---
+title: "Academic and Professional Profile"
+output: html_document
+---
+
+Anmol Singh
+
+9462 Winding Hill Way Lone Tree, CO 80124
+
+Mobile: 3038086032       E-mail: singh.anmol@columbia.edu
+
+**Personal Profile**
+
+I am currently a master's student in biostatistics at Columbia University conducting research in the field of statistical genetics with research experience in both academia and industry. My research and work experiences in
+conjunction with my coursework have made me an excellent problem solver, communicator, team player, and
+scientific writer. Furthermore, these experiences have given me valuable technical skills such as using machine
+learning algorithms, performing statistical analysis of data, and programming in a variety of languages including R,
+Python, Java, and MATLAB. I am currently interested in conducting research in one of the following areas: creating
+better screening and diagnostic tools for disease based on a person’s genome, identifying biomarkers that can cause
+the onset of disease, and creating personalized treatment methods based a variety of factors including their genetics. I
+look forward to applying the skills that I have learnt to a lab that is as passionate as I am about using the intersection
+of mathematics, computer science, and biology to help improve treatment methods, medical diagnoses, and patients’
+lives.
+
+**Honors and Awards**
+
+➢ Distinguished Scholar Award: Fall 2016
+
+  o $108,000 scholarship to attend Tulane University
+  
+➢ Dean’s List: Spring 2019, Fall 2020, Spring 2020
+
+  o Awarded to students who have a 3.667 GPA or higher in a semester
+  
+➢ Summer Research Grant: Summer 2018
+
+  o $1,600 grant from the Busschaert lab to work on a collaborative research project
+
+**Education**
+
+September 2020 – May 2022     **Master of Science, Biostatistics**
+
+Columbia University, New York, NY
+
+➢ Track: Statistical Genetics
+
+August 2016 – May 2020     **Bachelor of Science, Biomedical Engineering**
+
+Tulane University, New Orleans, LA
+
+➢ Thesis: Enhancing the Selectivity of Optical Anion Sensors Using Liposome Encapsulation and Anion
+Transporters
+
+➢ Advisor: Dr. Nathalie Busschaert
+
+➢ Major GPA: 3.556/4.0
+
+➢ Minors: Mathematics and Business
+
+**Research Experience**
+
+August 2020 – Present     **Research Assistant in Neurogenomics**
+
+Columbia University Irving Medical Center, New York, NY
+
+➢ Advisors: Dr. Suzanne Leal and Dr. Gao Wang
+
+➢ Using deep convolutional neural networks to identify genetic variants that could have an effect on the onset of Alzhimer's disease and intelectual disability.
+
+April 2020 – August 2020     **Research Assistant in Pharmacogenomics**
+
+Northwestern University Feinberg School of Medicine, Chicago, IL
+
+➢ Advisor: Dr. Minoli Perera
+
+➢ Created a novel method using the LAMatrix R package to incorporate DNA Methylation as a locus-specific covariate in eQTL mapping in African Americans
+
+➢ Showed how incorporating methylation into eQTL mapping can potentially identify disease causing genetic variants such as variants related to the expression of GSTM3 and HSPA6, which are genes that have been linked to the occurrence of Hepatocellular Carcinoma. 
+
+➢ Published a first author journal article and gave a talk on this research in the 2021 Pacific Symposium on Biocomputing meeting.
+
+January 2020 – August 2020     **Research Assistant in Cancer Diagnostics**
+
+Tulane University, New Orleans, LA
+
+➢ Advisor: Dr. Quincy Brown
+
+➢ Working on a project to use Convolutional Neural Networks to analyze prostate cancer histology images and
+determine which topological features correspond to different stages of prostate cancer
+
+➢ Working on improving the code efficiency and organization by organizing each method into distinct packages
+which can then be imported into the main file for use
+
+July 2018 – May 2020     **Research Assistant in Medicinal Chemistry**
+
+Tulane University, New Orleans, LA
+
+➢ Advisor: Dr. Nathalie Busschaert
+
+➢ Worked on an independent project to create a selective sensor for the acetate ion as a potential cancer
+therapeutic for my undergraduate thesis
+
+➢ Worked on a collaborative project with a PhD student in the lab, Sarah Marshall, to create a selective sensor
+for the iodide ion using partially selective anion transporters and liposomes which has now been published in Chemical Communications
+
+➢ Conducted spectroscopic assays with various anions and anion transporters to gauge the selectivity of each
+anion / transporter combination to find the best combination
+
+➢ Performed the data manipulation and cleanup of the spectroscopic assay results using Origin and Microsoft
+Excel to prepare the experimental data for analysis
+
+➢ Used linear and exponential regression models to estimate the rate of fluorescence change of the sensor in the
+presence of each anion to determine which anion transporter only causes a significant change for the anion we
+want to be detected
+
+May 2015 – August 2015     **Research Assistant in Medical Physics**
+
+University of Chicago, Chicago, IL
+
+➢ Advisor: Dr. Patrick La Riviere
+
+➢ Used Python to assist with research on modeling to find optimal wavelengths for opto-acoustic imaging of
+breast tumors
+
+**Work Experience**
+
+January 2020 - April 2020     **Data Analyst**
+
+Tulane University Department of Sociology, New Orleans, LA
+
+➢ Assisted with analyzing and compiling data for two different research projects, one on analyzing blogging
+trends from 2006 to 2017 and one on analyzing injustices that occur in the Chicago housing market
+
+➢ Used R to combine data from multiple Excel files into one to facilitate more efficient data analysis
+
+➢ Used R to create a linear regression model to predict how many blog posts would be posted in future years
+using a data set of the number of blog posts per year from 2008 to 2017
+
+➢ Used R to analyze waiting list data from 2016, 2018, and 2020 to show how long it took for families to
+receive a grant from the government for emergency home repairs in Chicago
+
+May 2018 - Present     **Academic Tutor**
+
+Varsity Tutors, Online
+
+➢ Tutors students struggling with mathematics to prepare them for the ACT, SAT, PSAT, and SAT II tests
+
+➢ Facilitates learning by tailoring one-on-one sessions according to each student's level
+
+June 2019 – August 2019     **R&D Engineering Intern**
+
+Allosource, Centennial, CO
+
+➢ Used Python to create the Graphical User Interface for the automation of their skin processing machine
+
+➢ Wrote a protocol that improves the existing decellularization technique for skin tissue thicker than 3.3 mm
+
+with a 218% greater reduction in skin tissue cells when compared to the current decellularization method
+
+➢ Used R to implement a linear regression model to estimate values for the DNA remaining on the skin tissue
+after decellularization was performed on the tissue
+
+October 2017 – May 2018     **Data Analytics Intern**
+
+Forward Science, New Orleans, LA
+
+➢ Assisted with marketing research using surveys for their products
+
+➢ Distributed surveys across Tulane University’s campus to collect data
+
+➢ Performed data analysis and created visualizations of the survey data using Microsoft Excel to generate
+conclusions about college students’ interest in their products
+
+**Journal Articles**
+
+➢ Singh, Anmol, Zhong, Yizhen, Park, Sehwan C., De, Tanima, Alcorn Cristina, and Perera, Minoli, Incorporation of DNA methylation into eQTL mapping in African Americans, Pacific Symposium on Biocomputing (2021), Accepted. 
+
+➢ Marshall, Sarah R, Singh, Anmol, Wagner, Jacqueline N, and Busschaert, Nathalie, “Enhancing the selectivity of optical sensors using synthetic transmembrane ion transporters”, Chemical Communications (2020), Accepted.
+
+**Presentations**
+
+Oral Presentations:
+
+➢ Singh, Anmol, “Incorporation of DNA Methylation into eQTL Mapping In African Americans", Pacific Symposium on Biocomputing. January 7, 2021. Kona,HI.
+
+➢ Singh, Anmol, “Enhancing the Selectivity of Optical Anion Sensors Using Liposome Encapsulation and
+Anion Transporters”, Tulane University. Department of Biomedical Engineering Undergraduate Research
+Symposium. January 27, 2020. New Orleans, LA.
+
+➢ Singh, Anmol, “Converting a non-selective halide sensor into a selective iodide sensor using liposomes and
+transporters”, Tulane University. Department of Chemistry Undergraduate Research Symposium. December
+8, 2018. New Orleans, LA.
+
+Poster Presentations:
+
+➢ Marshall, Sarah Ruth, Singh, Anmol, Wagner, Jacqueline, and Busschaert, Nathalie, “Converting a nonselective halide sensor into a selective iodide sensor using liposomes and transporters”, 14th Annual International Symposium on Supramolecular Chemistry. June 2, 2019. Lecce, Italy. 
+
+**Skills**
+
+➢ Programming Languages: R, SQL, MATLAB, Python, Java, C, C++
+
+➢ Other Software: Tableau, Microsoft Office, SPSS, Solidworks, Origin Data Analysis Software
+
+➢ Technical: Mathematical Modeling, Machine Learning, Data Analysis and Interpretation, Data Visualization,
+Statistical Analysis, Good Lab Practices, Scientific Writing
+
+➢ Intrapersonal: Oral Communication, Written Communication, Teamwork
+
+➢ Languages: English (Fluent), Hindi (Advanced), Punjabi (Advanced), Spanish (Beginner)

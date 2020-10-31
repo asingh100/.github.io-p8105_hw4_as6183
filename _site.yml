@@ -1,0 +1,16 @@
+name: "p8105_hw4_as6183 website"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About Me"
+      href: about.html
+    - text: "NYC Restaurant Inspections Flexidashboard"
+      href: flexidashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<singh.anmol@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/asingh100/
+output:
+  html_document:
+    theme: cerulean
