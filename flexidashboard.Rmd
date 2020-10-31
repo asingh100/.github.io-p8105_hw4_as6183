@@ -1,9 +1,68 @@
 ---
-title: "flexidashboard"
-output: html_document
+title: "Flexidashboard of NYC Restaurant Inspections"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("rest_inspec")
 ```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+plot_2=
+rest_inspec %>% 
+  group_by(record_date)%>%
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  filter(cuisine_description!="Missing")%>%
+  ggplot(aes(x=record_date,y=n,color=cuisine_description))+
+  geom_line()+
+  ggtitle("Number of Violations Over Time for Different Cuisines")+
+  xlab("Date of Violation")+
+  ylab("Number of Violations")+
+  guides(fill=guide_legend(title="Type of Cuisine"))
+
+ggplotly(plot_2)
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+plot_1=
+rest_inspec %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  filter(boro!="Missing")%>%
+  ggplot(aes(x=boro,y=n,fill=boro))+
+  geom_bar(stat="identity")+
+  ggtitle("Number of Violations Per NYC Borough")+
+  xlab("New York City Borough")+
+  ylab("Number of Violations")+
+  guides(fill=guide_legend(title="Borough"))
+
+ggplotly(plot_1)
+```
+
+### Chart C
+
+```{r}
+
+```
+
 
