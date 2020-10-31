@@ -3,5 +3,5 @@ title: "Introduction to Website"
 output: html_document
 ---
 
-Welcome! This website will give you a brief introduction to who I am which can be found on the [About Me](about.html) page and also will include a flexdashboard that I have created for the NYC Restaurant Inspections data set which is located on the [NYC Restaurant Inspections Flexidashboard](flexdashboard.html) page. If you have any questions or would like to reach out please feel free to contact me at my email address which can be found by clicking on the email icon on this page. Thank you!
+Welcome! This website will give you a brief introduction to who I am which can be found on the [About Me](about.html) page and also will include a flexdashboard that I have created for the NYC Restaurant Inspections data set which is located on the [NYC Restaurant Inspections Flexidashboard](flexidashboard.html) page. If you have any questions or would like to reach out please feel free to contact me at my email address which can be found by clicking on the email icon on this page. Thank you!
 
