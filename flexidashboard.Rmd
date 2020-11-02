@@ -21,19 +21,28 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-plot_2=
-rest_inspec %>% 
-  group_by(record_date)%>%
+library(arsenal)
+
+top_10 = 
+rest_inspec %>%
+  separate(inspection_date,into=c("year","month","day"),sep="-")%>%
   count(cuisine_description) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  top_n(cuisine_description,n = 10)%>%
-  filter(cuisine_description!= "Missing")%>%
-  ggplot(aes(x=record_date,y=n,color=cuisine_description))+
-  geom_line()+
-  ggtitle("Number of Violations Over Time for 10 Cuisines With The Most Violations")+
-  xlab("Date of Violation")+
+  top_n(n,n = 10)
+
+
+plot_2 = rest_inspec%>%
+  separate(inspection_date,into=c("year","month","day"),sep="-")%>%
+  group_by(year)%>%
+  count(cuisine_description)%>%
+  filter(cuisine_description %in% pull(top_10,cuisine_description))%>%
+  filter(year!="1900")%>%
+  ggplot(aes(x=year,y=n,color=cuisine_description))+
+  geom_point()+
+  ggtitle("Number of Violations Per Year for 10 Cuisines With The Most Violations")+
+  xlab("Year of Inspection")+
   ylab("Number of Violations")+
-  guides(fill=guide_legend(title="Type of Cuisine"))
+  theme(legend.position = "right")
 
 ggplotly(plot_2)
 
