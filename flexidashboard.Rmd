@@ -37,7 +37,8 @@ plot_2 = rest_inspec%>%
   count(cuisine_description)%>%
   filter(cuisine_description %in% pull(top_10,cuisine_description))%>%
   filter(year!="1900")%>%
-  ggplot(aes(x=year,y=n,color=cuisine_description))+
+  rename(Cuisine = cuisine_description)%>%
+  ggplot(aes(x=year,y=n,color=Cuisine))+
   geom_point()+
   ggtitle("Number of Violations Per Year for 10 Cuisines With The Most Violations")+
   xlab("Year of Inspection")+
