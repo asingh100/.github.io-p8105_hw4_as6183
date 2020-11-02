@@ -33,8 +33,7 @@ rest_inspec %>%
   ggtitle("Number of Violations Over Time for 10 Cuisines With The Most Violations")+
   xlab("Date of Violation")+
   ylab("Number of Violations")+
-  guides(fill=guide_legend(title="Type of Cuisine"))+
-  theme(plot.title=element_text(size=9))
+  guides(fill=guide_legend(title="Type of Cuisine"))
 
 ggplotly(plot_2)
 
@@ -57,7 +56,7 @@ rest_inspec %>%
   ggtitle("Distribution of Severity of Violations For Each NYC Borough")+
   xlab("New York City Borough")+
   ylab("Number of Violations")+
-  guides(fill=guide_legend(title="Severity of Violation"))+
+  guides(fill=guide_legend(title="Severity"))+
   theme(axis.text.x = element_text(size=8,angle=45,vjust = 0.5, hjust = 1),plot.title=element_text(size=9))
 
 ggplotly(plot_1)
@@ -69,12 +68,11 @@ ggplotly(plot_1)
 plot_3=
 rest_inspec %>% 
   filter(boro!="Missing")%>%
-  ggplot(aes(x=boro,y=score,fill=boro))+
-  geom_boxplot()+
+  ggplot(aes(x=boro,y=score))+
+  geom_boxplot(fill = "light blue",color="black")+
   ggtitle("Score of Restaurant Inspections For Each NYC Borough")+
   xlab("New York City Borough")+
   ylab("Score of Inspections")+
-  guides(fill=guide_legend(title="Borough"))+
   theme(axis.text.x = element_text(size=8,angle=45,vjust = 0.5, hjust = 1),plot.title=element_text(size=11))
 
 ggplotly(plot_3)
