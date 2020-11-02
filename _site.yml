@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About Me"
       href: about.html
-    - text: "NYC Restaurant Inspections Flexidashboard"
+    - text: "NYC Restaurant Inspections Flexdashboard"
       href: flexidashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<singh.anmol@columbia.edu>

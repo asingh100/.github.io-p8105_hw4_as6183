@@ -1,5 +1,5 @@
 ---
-title: "Flexidashboard of NYC Restaurant Inspections"
+title: "Flexdashboard of NYC Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -26,13 +26,15 @@ rest_inspec %>%
   group_by(record_date)%>%
   count(cuisine_description) %>% 
   mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
-  filter(cuisine_description!="Missing")%>%
+  top_n(cuisine_description,n = 10)%>%
+  filter(cuisine_description!= "Missing")%>%
   ggplot(aes(x=record_date,y=n,color=cuisine_description))+
   geom_line()+
-  ggtitle("Number of Violations Over Time for Different Cuisines")+
+  ggtitle("Number of Violations Over Time for 10 Cuisines With The Most Violations")+
   xlab("Date of Violation")+
   ylab("Number of Violations")+
-  guides(fill=guide_legend(title="Type of Cuisine"))
+  guides(fill=guide_legend(title="Type of Cuisine"))+
+  theme(plot.title=element_text(size=9))
 
 ggplotly(plot_2)
 
@@ -46,15 +48,17 @@ Column {data-width=350}
 ```{r}
 plot_1=
 rest_inspec %>% 
+  group_by(critical_flag)%>%
   count(boro) %>% 
   mutate(boro = fct_reorder(boro, n)) %>% 
   filter(boro!="Missing")%>%
-  ggplot(aes(x=boro,y=n,fill=boro))+
+  ggplot(aes(x=boro,y=n,fill=critical_flag))+
   geom_bar(stat="identity")+
-  ggtitle("Number of Violations Per NYC Borough")+
+  ggtitle("Distribution of Severity of Violations For Each NYC Borough")+
   xlab("New York City Borough")+
   ylab("Number of Violations")+
-  guides(fill=guide_legend(title="Borough"))
+  guides(fill=guide_legend(title="Severity of Violation"))+
+  theme(axis.text.x = element_text(size=8,angle=45,vjust = 0.5, hjust = 1),plot.title=element_text(size=9))
 
 ggplotly(plot_1)
 ```
@@ -62,7 +66,18 @@ ggplotly(plot_1)
 ### Chart C
 
 ```{r}
+plot_3=
+rest_inspec %>% 
+  filter(boro!="Missing")%>%
+  ggplot(aes(x=boro,y=score,fill=boro))+
+  geom_boxplot()+
+  ggtitle("Score of Restaurant Inspections For Each NYC Borough")+
+  xlab("New York City Borough")+
+  ylab("Score of Inspections")+
+  guides(fill=guide_legend(title="Borough"))+
+  theme(axis.text.x = element_text(size=8,angle=45,vjust = 0.5, hjust = 1),plot.title=element_text(size=11))
 
+ggplotly(plot_3)
 ```
 
 
